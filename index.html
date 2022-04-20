@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/grid.css">
+    <link rel="stylesheet" href="./assets/CSS/base.css">
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <link rel="stylesheet" href="./assets/CSS/css/all.min.css">
+    <link rel="stylesheet" href="./assets/CSS/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- FORM ACCOUNT -->
+    <div class="row log-in__wrap" id="form-group">
+            <!-- LOG IN FORM -->
+            <div class="col l-6 log-in" id="log-in">
+            <i class="fas fa-times log-in__close"></i>
+            <div class="log-in__effect">
+            </div>
+            <h1>Log In</h1>
+            <div class="log-in__user-name">
+                <p>User Name</p>
+                <input rules="required" type="text" class="log-in__user-input" placeholder="Fill user name in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="log-in__pass">
+                <p>PassWord</p>
+                <input rules="required" type="text" class="log-in__user-input" placeholder="Fill your password in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="log-in__footer">
+                <p class="log-in__register">
+                    Do you have an account?
+                    <a href="#" class="log-in__form-register">Create an account</a>
+                </p>
+                <a href="#" class="log-in__btn">Log In</a>
+            </div>
+        </div>
+
+        <!-- REGISTER FORM -->
+        <div class="col l-6 register" id="register">
+            <i class="fas fa-times log-in__close"></i>
+            <div class="register__effect"></div>
+            <h1>Register</h1>
+            <div class="register__user-name">
+                <p>User Name</p>
+                <input rules="required" type="text" class="log-in__user-input" placeholder="Fill user name in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="register__pass">
+                <p>PassWord</p>
+                <input rules="required" type="text" class="log-in__user-input" placeholder="Fill your password in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="register__pass1">
+                <p>Check PassWord</p>
+                <input rules="required" type="text" class="log-in__user-input" placeholder="Fill your password in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="register__email">
+                <p>Email</p>
+                <input rules="required" type="email" class="log-in__user-input" placeholder="Fill your password in the blank please">
+                <p class="form-message"></p>
+            </div>
+            <div class="register__footer">
+                <div class="register__condition">
+                    <input type="checkbox" id="condition_agree" name="condition_agree" class="log-in__user-input register__user-checkbox"
+                    value="agree">
+                    <label for="condition_agree">I agree with rules and condition</label>
+                    <p class="form-message"></p>
+                </div>
+                <a href="#" class="register__form-log-in">
+                    I have an account
+                </a>
+                <a href="#" class="register__btn">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!-- NAVIGATION BAR -->
+        <div class="grid">
+            <div class="header row">
+                <div class="header-on row col l-12">
+                    <div class="col l-2 header__img">
+                        <img src="https://www.thepizzacompany.vn/Themes/Emporium/Content/img/LogoTPC_Delivery_(VN).png" alt="Brand Logo" 
+                        class="header__img-brand">
+                    </div>
+    
+                    <div class="col l-7 header__extention">
+                        <div class="header__delivery">
+                            <div class="header__delivery-ship">
+                                <p>
+                                    <i class="fas fa-shipping-fast header__delivery-ship-icon"></i>
+                                    DELIVERY
+                                </p>
+                            </div>
+                            <div class="header__delivery-order">
+                                <p>
+                                    <i class="fas fa-pizza-slice header__delivery-order-icon"></i>
+                                    ORDER
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="header__location">
+                            <p class="header__location-find">
+                                <i class="fas fa-map-marker-alt header__location-find-icon"></i>
+                                Fill Your Location
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col l-3 header__account">
+                        <p class="header__account-login-wrap">
+                            <i class="far fa-user-circle header__account-longin-icon"></i>
+                            <a href="#" class="header__account-login">Log In</a>
+                            / 
+                            <a href="#" class="header__account-register">Register</a>
+                        </p>
+                        <i class="fas fa-flag-usa header__account-icon"></i>
+                    </div>
+                </div>
+    
+                <div class="header-down row col l-12">
+                    <div class="col l-10 category">
+                        <ul class="category__list">
+                            <li class="category__item">Promotion</li>
+                            <li class="category__item">Pizza</li>
+                            <li class="category__item">Appetizer</li>
+                            <li class="category__item">Sapagetti</li>
+                            <li class="category__item">Baked Noodles</li>
+                            <li class="category__item">Salad</li>
+                            <li class="category__item">Dessert</li>
+                            <li class="category__item">Drinks</li>
+                        </ul>
+                    </div>
+    
+                    <div class="col l-2 cart">
+                        <div class="cart__find">
+                            <i class="fas fa-search cart__find-icon"></i>
+                        </div>
+                        <div class="cart__quanity">
+                            <i class="fas fa-shopping-cart cart__quanity-icon"></i>
+                            <span class="cart__quanity-content">
+                                Cart
+                            </span>
+                            <span class="cart__quanity-number">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <!-- SLIDER PART -->
+            <div id="slider" class="slider">
+                <!-- <ul class="slider__img-list">
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img" id="firstClone">
+                        </a>
+                    </li>
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img">
+                        </a>
+                    </li>
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img">
+                        </a>
+                    </li>
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img">
+                        </a>
+                    </li>
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img">
+                        </a>
+                    </li>
+                    <li class="slider__img-item">
+                        <a href="#" class="slider__img-link">
+                            <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg" 
+                        alt="pizza Company" class="slider__img" id="lastClone">
+                        </a>
+                    </li>
+                    
+                </ul> -->
+                <div class="slider__img-list">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002854_50-OFF-HDE_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item" id="lastClone">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002854_50-OFF-HDE_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item">
+                    <img src="https://www.thepizzacompany.vn/images/thumbs/000/0002870_BannerSlider.jpeg"
+                    alt="Pizza" class="slider__img-item" id="firstClone">
+                </div>
+
+                <p id="prevBtn" class="slider__btn-previous"><</p>
+                <p id ="nextBtn" class="slider__btn-next">></p>
+            </div>
+
+            <!-- PRODUCT PART -->
+            <div class="content__product grid wide">
+
+                <!-- PROMOTION SECTION -->
+                <div class="row product__promotion">
+                    <h3 class="col l-12 product__promotion-header">
+                            Promotion, combo
+                    </h3>
+
+                    <div class="promotion__wrap-slide">
+                        <ul class="product__promotion-list row">
+
+                            <div class="product__promotion-wrap-item" id="last_promotion">
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <p href="#" class="promotion__btn-prev"><</p>
+                                <p href="#" class="promotion__btn-next">></p>
+                            </div>
+
+                            <div class="product__promotion-wrap-item" id="last_prom">
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <p href="#" class="promotion__btn-prev"><</p>
+                                <p href="#" class="promotion__btn-next">></p>
+                            </div>
+
+                            <div class="product__promotion-wrap-item" id="last_promtion">
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <p href="#" class="promotion__btn-prev"><</p>
+                                <p href="#" class="promotion__btn-next">></p>
+                            </div>
+
+                            <div class="product__promotion-wrap-item" id="last_p">
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <p href="#" class="promotion__btn-prev"><</p>
+                                <p href="#" class="promotion__btn-next">></p>
+                            </div>
+
+                            <div class="product__promotion-wrap-item" id="first_promotion">
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product__promotion-item col l-3">
+                                    <div class="product__promotion-item-img-wrap">
+                                        <img src="./assets/img/product.png" alt="product" class="product__promotion-item-img">
+                                    </div>
+                                    <p class="product__promotion-item-name">GOLDEN GOOD MOOD</p>
+                                    <p class="product__promotion-item-description">Suitable for two people</p>
+                                    <div class="promotion-item-footer">
+                                        <div class="promotion__footer-price">
+                                            <p class="price-content">Price</p>
+                                            <p class="price-item">20$</p>
+                                        </div>
+                                        <div class="promotion__footer-btn">
+                                            <a href="#" class="promotion__footer-btn-content">
+                                                <span>Buy Now</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <p href="#" class="promotion__btn-prev"><</p>
+                                <p href="#" class="promotion__btn-next">></p>
+                            </div>
+
+                            <!-- Button prev/next -->
+                        </ul>
+                   </div>
+                </div>
+
+                <!-- New Product -->
+                <div class="row product__new" id="product__new">
+                    <div class="product__new-inline"></div>
+                    <h3 class="col l-12 product__new-header">
+                        New Product
+                    </h3>
+
+                    <div class="product__new-wrap-list">
+                        <ul class="product__new-list row">
+                            <li class="product__new-item col l-3">
+                                <div class="product__new-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__new-item-img">
+                                </div>
+                                <p class="product__new-item-name">GOLDEN GOOD MOOD</p>
+                                <p class="product__new-item-description">Suitable for two people</p>
+                                <div class="new-item-footer">
+                                    <div class="new__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="new__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__new-item col l-3">
+                                <div class="product__new-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__new-item-img">
+                                </div>
+                                <p class="product__new-item-name">GOLDEN GOOD MOOD</p>
+                                <p class="product__new-item-description">Suitable for two people</p>
+                                <div class="new-item-footer">
+                                    <div class="new__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="new__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__new-item col l-3">
+                                <div class="product__new-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__new-item-img">
+                                </div>
+                                <p class="product__new-item-name">GOLDEN GOOD MOOD</p>
+                                <p class="product__new-item-description">Suitable for two people</p>
+                                <div class="new-item-footer">
+                                    <div class="new__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="new__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu Section -->
+                <div class="row product__new" id="product__new">
+                    <div class="product__new-inline"></div>
+                    <h3 class="col l-12 product__new-header">
+                        Menu
+                    </h3>
+                    <div class="menu__nav-bar">
+                        <span class="menu__nav-bar-product">
+                            Pizza
+                        </span>
+                        <ul class="menu__nav-bar-list">
+                            <li class="menu__nav-bar-item-all">All</li>
+                            <li class="menu__nav-bar-item">Special recipe</li>
+                            <li class="menu__nav-bar-item">Premium seafood</li>
+                            <li class="menu__nav-bar-item">Premium mixed</li>
+                            <li class="menu__nav-bar-item">Traditional</li>
+                            <li class="menu__nav-bar-item">Cool 89k</li>
+                        </ul>
+                    </div>
+                    <div class="product__menu-wrap-list">
+                        <!-- <ul class="product__menu-list-default active row" id="menuDefault">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">GOLDEN GOOD MOOD</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+
+                        <!-- Special recipe -->
+                        <ul class="product__menu-list active row">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Premium seafood -->
+                        <ul class="product__menu-list row">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Premium seafood</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Premium mixed -->
+                        <ul class="product__menu-list row">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Premium mixed</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Traditional -->  
+                        <ul class="product__menu-list row">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Traditional</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- Cool 89k -->
+                        <ul class="product__menu-list row">
+                            <li class="product__menu-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Cool 89k</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Appetizer Section-->
+                <div class="row product__new" id="product__new">
+                    <div class="product__new-inline"></div>
+                    <h3 class="col l-12 product__new-header">
+                        Appetizer
+                    </h3>
+                    
+                    <div class="product__appetizer-wrap">
+                        <ul class="product__appetizer-list active row">
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="product__appetizer-list row">
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                          <ul class="product__appetizer-list row">
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__appetizer-item col l-3">
+                                <div class="product__menu-item-img-wrap">
+                                    <img src="./assets/img/product.png" alt="product" class="product__menu-item-img">
+                                </div>
+                                <p class="product__menu-item-name">Special recipe</p>
+                                <p class="product__menu-item-description">Suitable for two people</p>
+                                <div class="menu-item-footer">
+                                    <div class="menu__footer-price">
+                                        <p class="price-content">Price</p>
+                                        <p class="price-item">20$</p>
+                                    </div>
+                                    <div class="menu__footer-btn">
+                                        <a href="#" class="promotion__footer-btn-content">
+                                            <span>Buy Now</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="appetizer__more">
+                            <p class="appetizer__more-content">
+                                More +
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</body>
+<script src="./assets/jvs/pizzaHut.js"></script>
+<script src="./assets/jvs/jsForm1.js"></script>
+<script>
+    // VALIDATOR OBJECT
+
+
+
+
+    
+</script>
+</html>

@@ -1,0 +1,257 @@
+/* LOG IN */
+.log-in__wrap.active {
+    position: relative;
+    right: 0;
+    left: 0;
+    z-index: 1000000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.log-in__close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 22px;
+    color: #969696;
+}
+
+.log-in__close:hover {
+    opacity: 0.6;
+}
+
+.log-in__effect {
+    width: 38px;
+    height: 2px;
+    border-radius: 14px;
+    background-color: #039748;
+}
+
+.log-in {
+    display: none;
+}
+
+.log-in.active {
+    position: relative;
+    display: block;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.log-in h1 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.log-in__user-name {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.log-in__user-input {
+    margin: 10px 0 0 0;
+    padding: 6px 18px;
+    border: 1.4px solid #006a31;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.log-in__user-input:focus {
+    border: 2px solid #063b1f;
+    opacity: 0.8;
+}
+
+.log-in__pass {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.log-in__footer {
+    margin: 24px 0 0 0;
+}
+
+.log-in__forget-pass {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.log-in__register {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+}
+
+.log-in__form-register {
+    font-size: 14px;
+    font-weight: 550;
+    color: #006a31;
+}
+
+.log-in__btn {
+    margin: 26px 0 0 0;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #006a31;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.log-in__btn:hover {
+    opacity: 0.8;
+}
+
+.active .form-message{
+    margin: 4px 0 0 6px;
+    font-size: 14px;
+    color: rgb(235, 17, 17);
+}
+
+/* REGISTER */
+
+.register__effect {
+    width: 38px;
+    height: 2px;
+    border-radius: 14px;
+    background-color: #039748;
+}
+
+.register {
+    display: none;
+}
+
+.register.active {
+    position: relative;
+    display: block;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.register h1 {
+    margin: 10px 0 0 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.register__user-name {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register__user-input {
+    margin: 10px 0 0 0;
+    padding: 6px 18px;
+    border: 1.4px solid #006a31;
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+}
+
+.register__user-input:focus {
+    border: 2px solid #063b1f;
+    opacity: 0.8;
+}
+
+.register__pass {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register__pass1 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register__email {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register__footer {
+    margin: 24px 0 0 0;
+}
+
+.register__user-checkbox {
+    margin: 0 12px 0 0;
+    width: 14px;
+    height: 14px;
+}
+
+.register__condition {
+    display: block;
+}
+
+.register__footer label {
+    display: inline-block;
+    height: 20px;
+    font-size: 14px;
+    color: #111;
+    line-height: 20px;
+}
+
+.register__btn {
+    margin: 26px 0 0 0;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #006a31;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.register__btn:hover {
+    opacity: 0.8;
+}
+
+.register__form-log-in {
+    display: block;
+    font-size: 14px;
+    font-weight: 550;
+    color: #006a31;
+    margin: 6px 0 0 0;
+}
+
+.active .form-message{
+    margin: 4px 0 0 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(235, 17, 17);
+}
+
+/* BTN USE IN PRODUCT */
+.promotion__footer-btn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 38px;
+    min-width: 112px;
+    margin: 8px 0 0 0;
+    border: 1px solid #006a31;
+    border-radius: 14px;
+    text-align: center;
+    list-style-type: none;
+    color: #006a31;
+}
